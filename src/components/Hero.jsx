@@ -18,16 +18,20 @@ const renderText = (textArray) => {
 };
 
 const Hero = () => {
+  const isMobile = window.innerWidth <= 450;
+
   return (
     <section className={`relative w-full h-screen mx-auto flex flex-col justify-start items-center top-[65px] text-center ${styles.paddingX}`}>
       
       <div className='flex flex-col justify-center mb-5'>
         <h1 className={`${styles.heroHeadText} py-5`}>
-          {renderText(greetings)}
-          {renderText(name)}
+          {isMobile ? "~$ Hi, I'm Pily" : renderText(greetings)}
+          {isMobile ? null : renderText(name)}
         </h1>
-        <p className={`${styles.heroSubText}`}>
-          {renderText(description)}
+
+        <p className={`${styles.heroSubText} ${isMobile ? styles.heroMobileSubText : styles.heroSubText}`} >
+          {/* {isMobile ? "A Full-Stack developer with a " + "background rooted in data." : renderText(description)} */}
+          {isMobile ? "A Full-Stack developer with a background rooted in data." : renderText(description)}
         </p>
       </div>
 
