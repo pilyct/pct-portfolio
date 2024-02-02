@@ -17,7 +17,7 @@ const Contact = () => {
     message: "",
   });
 
-  const [loading, setLoading] = useState(false);
+  // const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
     const { target } = e;
@@ -31,7 +31,12 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setLoading(true);
+    // setLoading(true);
+
+    if (!form.name.trim() || !form.email.trim() || !form.message.trim()) {
+      alert("Please fill in all fields.");
+      return;
+    }
 
     emailjs
       .send(
@@ -48,7 +53,7 @@ const Contact = () => {
       )
       .then(
         () => {
-          setLoading(false);
+          // setLoading(false);
           alert("Thank you for your message! I will get back to you as soon as possible.");
 
           setForm({
@@ -58,7 +63,7 @@ const Contact = () => {
           });
         },
         (error) => {
-          setLoading(false);
+          // setLoading(false);
           console.error(error);
 
           alert("Ahh, something went wrong. Please try again.");
