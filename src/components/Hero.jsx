@@ -37,7 +37,7 @@ const Hero = () => {
         
 
       <div className='mb-52'>
-        <Button buttonText='Contact Me' />
+        <Button buttonText='Contact Me' isContactButton={true} />
       </div>
 
       <div className='pt-6'>

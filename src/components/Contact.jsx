@@ -6,7 +6,7 @@ import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
-import ContactButton from './ContactButton';
+import Button from './Button';
 
 
 const Contact = () => {
@@ -117,9 +117,10 @@ const Contact = () => {
           </label>
 
           <button type='submit' className='flex flex-row justify-center'>
-            <ContactButton buttonText='Send' >
+            {/* <Button buttonText='Send' isContactButton={false}>
             {loading ? "Sending..." : "Send"}
-            </ContactButton>
+            </Button> */}
+            <Button buttonText='Send' isContactButton={false} enableLoading={true} />
           </button>
         </form>
       </motion.div>
