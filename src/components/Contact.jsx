@@ -17,8 +17,6 @@ const Contact = () => {
     message: "",
   });
 
-  // const [loading, setLoading] = useState(false);
-
   const handleChange = (e) => {
     const { target } = e;
     const { name, value } = target;
@@ -31,7 +29,6 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // setLoading(true);
 
     if (!form.name.trim() || !form.email.trim() || !form.message.trim()) {
       alert("Please fill in all fields.");
@@ -53,7 +50,6 @@ const Contact = () => {
       )
       .then(
         () => {
-          // setLoading(false);
           alert("Thank you for your message! I will get back to you as soon as possible.");
 
           setForm({
@@ -63,7 +59,6 @@ const Contact = () => {
           });
         },
         (error) => {
-          // setLoading(false);
           console.error(error);
 
           alert("Ahh, something went wrong. Please try again.");
@@ -122,9 +117,6 @@ const Contact = () => {
           </label>
 
           <button type='submit' className='flex flex-row justify-center'>
-            {/* <Button buttonText='Send' isContactButton={false}>
-            {loading ? "Sending..." : "Send"}
-            </Button> */}
             <Button buttonText='Send' isContactButton={false} enableLoading={true} />
           </button>
         </form>

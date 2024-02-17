@@ -29,8 +29,7 @@ const Hero = () => {
           {isMobile ? null : renderText(name)}
         </h1>
 
-        <p className={`${styles.heroSubText} ${isMobile ? styles.heroMobileSubText : styles.heroSubText}`} >
-          {/* {isMobile ? "A Full-Stack developer with a " + "background rooted in data." : renderText(description)} */}
+        <p className={`${styles.heroSubText} ${isMobile ? styles.heroMobileSubText : styles.heroSubText}`}>
           {isMobile ? "A Full-Stack developer with a background rooted in data." : renderText(description)}
         </p>
       </div>

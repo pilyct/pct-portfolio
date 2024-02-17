@@ -11,11 +11,9 @@ const Button = ({ buttonText, isContactButton = false, enableLoading = false }) 
   const [loading, setLoading] = useState(false);
 
   const handleClick = () => {
-    // Check if loading logic is enabled and trigger loading state accordingly
     if (enableLoading) {
       setLoading(true);
 
-      // Simulate the completion of the action after a delay (e.g., 2 seconds)
       setTimeout(() => {
         setLoading(false);
       }, 2000);
