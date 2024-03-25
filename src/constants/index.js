@@ -111,7 +111,7 @@ const experiences = [
     company_name: "YUKKA Lab AG",
     icon: yukkaLogo,
     iconBg: "#383E56",
-    date: "Feb 2019 - Mar 2019",
+    date: "2019",
     points: [
       "Introduction to NLP techniques:", 
       "Topic Modelling - LDA model using Python and R.",
@@ -123,7 +123,7 @@ const experiences = [
     company_name: "Looping Group",
     icon: looping,
     iconBg: "#E6DEDD",
-    date: "May 2019 - Sep 2021",
+    date: "2019 - 2021",
     points: [
       "Develop Power BI-based dashboards.",
       "Implement Tableau-based dashboards.", 
@@ -138,7 +138,7 @@ const experiences = [
     company_name: "Looping Group",
     icon: loopingLogo,
     iconBg: "#383E56",
-    date: "Sep 2021 - Apr 2023",
+    date: "2021 - 2023",
     points: [
       "Designed, built, and maintained data pipelines for DAX 30 clients, ensuring accuracy and completeness.",
       "Automated data processing tasks, optimising efficiency and reliability of data flows, resulting in a 25% reduction in processing time.",
@@ -154,7 +154,7 @@ const experiences = [
     company_name: "EVAPP",
     icon: evapp,
     iconBg: "#E6DEDD",
-    date: "Nov 2023 - Present",
+    date: "2023 - Present",
     points: [
       "Played a key role in designing and implementing critical features, including User Profile, Add Credits Section, and Live Chat, resulting in a 25% improvement in user engagement.",
       "Conducted a seamless migration of the codebase from JavaScript to TypeScript, optimising maintainability and minimising errors.",
