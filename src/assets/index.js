@@ -32,6 +32,7 @@ import evapp from "./company/evapp.png";
 import carpooling from "./carpooling.png";
 import diaree from "./diaree.png";
 import weather from "./weather.png";
+import ecommerceshop from "./ecommerceshop.png";
 
 
 
@@ -67,4 +68,6 @@ export {
   carpooling,
   diaree,
   weather,
+  ecommerceshop,
+
 };
