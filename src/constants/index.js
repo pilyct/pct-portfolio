@@ -21,6 +21,7 @@ import {
   carpooling,
   diaree,
   weather,
+  ecommerceshop,
 } from "../assets";
 
 
@@ -242,6 +243,35 @@ const projects = [
     ],
     image: weather,
     source_code_link: "https://github.com/pilyct/weather-app",
+  },
+  {
+    name: "E-Commerce Shop Desktop App",
+    description:
+      "BiteMe is a full-stack e-commerce app that offers an exceptional shopping experience. It provides real-time inventory tracking and an intuitive add-to-cart feature, ensuring you can easily find and purchase your desired products.",
+    tags: [
+      {
+        name: "angular",
+        color: "violet-text-gradient",
+      },
+      {
+        name: "expressjs",
+        color: "violet-text-gradient",
+      },
+      {
+        name: "css",
+        color: "violet-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "violet-text-gradient",
+      },
+      {
+        name: "mongoDB",
+        color: "violet-text-gradient",
+      },
+    ],
+    image: ecommerceshop,
+    source_code_link: "https://github.com/pilyct/e-commerce-website",
   },
 ];
 
